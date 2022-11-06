@@ -102,7 +102,7 @@ def find_package_data(
 
 
 PACKAGE = "libpythonpro"
-NAME = "libpythonpro-gabrielwp"
+NAME = "libpythonpro_gwp"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
 AUTHOR = "Gabriel Wagner Piazenski"
 AUTHOR_EMAIL = "gabrielpiazenski@gmail.com"
