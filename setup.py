@@ -6,6 +6,7 @@ from distutils.util import convert_path
 from fnmatch import fnmatchcase
 from setuptools import setup, find_packages
 
+from os import path #import feito para ser possível ajustar a formatação do texto no pypi.org
 
 def read(fname):
     return codecs.open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -101,6 +102,15 @@ def find_package_data(
     return out
 
 
+#Parte adicionada para ajustar a formatação do testo no Pypi.org
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+# a variável long_description será posta no lugar do read(README.md)
+#Fim da alteração.
+#--------------------------------------------------------------------
+
 PACKAGE = "libpythonpro"
 NAME = "libpythonpro_gwp"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
@@ -113,7 +123,7 @@ setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    long_description=read('README.md'),
+    long_description=long_description, #alteração da variável, era: long_description=read('README.md')
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
