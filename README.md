@@ -7,6 +7,8 @@ Link para o curso [Python Pro](https://pythonpro.com.br/)
 
 Suportada versão 3 de Python
 
+[![codecov](https://codecov.io/gh/gabrielwp87/libpythonpro/branch/16/graph/badge.svg?token=MOGP5IZEF9)](https://codecov.io/gh/gabrielwp87/libpythonpro)
+
 Para instalar:
 ``` console
 py -3 -m venv .venv
