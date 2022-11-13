@@ -9,6 +9,7 @@ class Sessao:
         Sessao.contador += 1
         usuario.id = Sessao.contador
         self.usuarios.append(usuario)
+
     def listar(self):
         return self.usuarios
 
@@ -21,7 +22,8 @@ class Sessao:
 
 class Conexao:
     def __init__(self):
-        sleep(10) #parâmetro em segundos
+        sleep(1)  # parâmetro em segundos
+
     def gerar_sessao(self):
         return Sessao()
 
