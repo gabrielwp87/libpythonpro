@@ -3,7 +3,8 @@ import pytest
 from libpythonpro.tests.spam.db import Conexao
 from libpythonpro.tests.spam.modelos import Usuario
 
-@pytest.fixture
+#Existe 3 escopos da fixture, por função, por módulo e por sessão (será executado apenas uma vez na sessão de teste)
+@pytest.fixture(scope='module')
 def conexao():
     #Setup
     conexao_obj = Conexao()
