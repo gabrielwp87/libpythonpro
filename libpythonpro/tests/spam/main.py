@@ -1,4 +1,4 @@
-class Enviador_de_spam:
+class EnviadorDeSpam:
     def __init__(self, sessao, enviador):
         self.sessao = sessao
         self.enviador = enviador
